@@ -1,0 +1,54 @@
+gHello Everyone, Please go through these commands
+
+find *.txt  -  find all the files with .txt extensions 
+(the above command works for the other extensions too)
+find -size +5M - find the files which are more than 5mb
+find *.pdf  - find all the files with .pdf extensions
+find -size +5M -type f - find all the files which are more than 5mb
+find -size +5M -type f | grep .pdf - find all the files which of pdf extension
+find . - type f - empty  - find all the files which are empty
+grep CAPTAIN data.csv --> { grep "content you are searching" and "Filename" } - check for the content you
+have typed in that particular file { here it is searching in data.csv file for captain }
+grep -i capatin data.csv - searches the files in lower case
+grep -ir capatin - searches the file for lowercase recurssion
+ls -p | grep / - lists folders in that current directory
+ls -p | grep -v / - lists files in that current directory
+env  - environment
+env | grep -i user - files from user directory
+env | grep -i home  -  files from home directory
+echo Hello Dan | awk '{$1="Ali"} {print $0}'
+echo Hello Dan | awk '{$2="Ali"} {print $0}'
+BEGIN - preprocessing and END  - postprocessing
+cat data.csv | grep -i captain | awk '{sum+=$4} END {print sum/NR}'  - finding the average
+ cat data.csv | grep -i executive | awk '{print $2 $4}' - finds the data of those columns
+ cat data.csv | grep -i chief | awk '{print $2 $4}' - same as above
+cat data.csv | grep -i captain - finds the data of captain 
+touch - command is used to create an empty file
+ex - touch abc.txt (any kind of extensions you can create)
+nano - command is used as an editor to edit files
+cat - command is used to view the content of file in the terminal
+612  echo Hello Dan
+  613  echo Hello Rose
+  614  echo Hello Dan
+  615  echo Hello Dan | awk '{$2="Tina"} {print $0}'
+  616  echo Hello Dan | awk '{$2="Tina"} {print $1}'
+  617  echo Hello Dan | awk '{$1="Tina"} {print $1}'
+  618  echo Hello Dan | awk '{$1="Tina"} {print $0}'
+  619  echo Hello Dan | awk '{$0="Tina"} {print $0}'
+  620  echo Hello Dan | awk '{$0="Tina"} {print $1}'
+  635  cat data.csv
+  636  cat data.csv
+  637  cat data.csv | grep -i mechanic
+  638  cat data.csv | grep -i captain
+  639  cat data.csv | grep -i captain | awk '{$2 $4}'
+  640  cat data.csv | grep -i captain | awk '{print $2 $4}'
+  641  cat data.csv | grep -i captain | awk '{print $1 $4}'
+  642  cat data.csv | grep -i captain | awk '{print $1 $2}'
+  643  cat data.csv | grep -i captain | awk '{print $2 $4}'
+  644  cat data.csv | grep -i captain | awk '{sum+=$4} {print sum}'
+  645  cat data.csv | grep -i captain | awk '{sum+=$4} {print sum/NR}'
+  646  cat data.csv | grep -i captain | awk '{sum+=$5} {print sum/NR}'
+
+
+Open
+
